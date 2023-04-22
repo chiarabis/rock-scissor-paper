@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #434a8d;
+}
+
+.set-game{
+    height: min-content;
+    font-family: sans-serif;
+}
+
+.score{
+    color: #d9d9d9;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.score h2{
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+.score p{
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 1.1rem;
+}
+
+.match{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.winner{
+    color: #d9d9d9;
+    font-size: 1.3rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.hands, .options{padding: 10px;}
+.hands img{
+    width: 60px;
+    margin: 0 30px;
+}
+
+.options button, #reset-btn{
+    width: 90px;
+    height: 35px;
+    border: none;
+    color: #d9d9d9;
+    font-size: 0.7rem;
+    background-color: #197373;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 0 #0e0e0e;
+    cursor: pointer;
+    margin: 20px;
+}
+.options button:active, #reset-btn:active {background-color: #1ba0a0; color: #0e0e0e;}
+#reset-btn{background-color: #d9d9d9; color: #197373;}
+
+.computer-hand{transform: rotateY(-180deg);}
+
+@media (max-width: 345px){
+    .hands img{width: 60px;}
+    .score p{font-size: 0.8rem;}
+    .score h2{font-size: 1.1rem;}
+    .options button{width: 72px; height: 28px; font-size: 0.5rem;}
+    .winner{font-size: 1.1rem;}
+}
