@@ -87,6 +87,7 @@ const game= () => {
     resetBtn.addEventListener("click", ()=> {
         pScore = 0
         cScore = 0
+        updateScore()
     });
     
     playMatch();
